@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080d1b">
+<meta name="description" content="AJ Code Lab — नेपालीमा coding, Python, web development र सुरक्षित cybersecurity सिक्ने अभ्यासशाला।">
+<title>AJ Code Lab | Learn • Build • Practice</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">AJ</span><span>AJ <b>CODE LAB</b><small>LEARN · BUILD · PRACTICE</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="मेनु खोल्नुहोस्">☰</button>
+  <nav id="nav"><a href="#learn">पाठ्यक्रम</a><a href="#playground">कोड ल्याब</a><a href="#security">Cyber Lab</a><a href="#projects">Projects</a></nav>
+  <button class="theme-btn" id="themeBtn" title="Theme बदल्नुहोस्">☼</button>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> नेपालीमै सिक्नुहोस् · आफैँ बनाएर अभ्यास गर्नुहोस्</div>
+  <h1>तपाईंको Coding Journey<br><em>यहाँबाट सुरु हुन्छ।</em></h1>
+  <p>Python, २०+ programming languages, web & app development, networking र सुरक्षित cybersecurity — सबै एउटै learning lab मा।</p>
+  <div class="hero-actions"><a class="btn primary" href="#learn">सिक्न सुरु गर्नुहोस् ↗</a><a class="btn secondary" href="#playground">Code Playground खोल्नुहोस्</a></div>
+  <div class="hero-stats"><div><b>20+</b><small>भाषा</small></div><div><b>6</b><small>Learning paths</small></div><div><b>100%</b><small>Beginner friendly</small></div></div></div>
+  <div class="hero-art"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="code-window"><div class="window-top"><i></i><i></i><i></i><span>main.py</span></div><pre><span class="purple">def</span> <span class="cyan">start_journey</span>():
+    name = <span class="green">"Coder"</span>
+    print(<span class="green">"Namaste, "</span> + name)
+    <span class="purple">return</span> <span class="green">"Keep learning!"</span>
+
+<span class="comment"># Your future starts here</span>
+start_journey()</pre><div class="terminal-line"><span>➜</span> AJ Code Lab is ready <b>●</b></div></div><div class="floating-tag tag-one">⌘ Python</div><div class="floating-tag tag-two">{"</>"} Build</div></div>
+</section>
+<section class="quick-grid">
+  <article><span>⌘</span><h3>Programming</h3><p>आधारभूतदेखि advanced concepts सम्म।</p></article>
+  <article><span>◈</span><h3>Web Development</h3><p>HTML, CSS, JavaScript र responsive website।</p></article>
+  <article><span>▣</span><h3>App Development</h3><p>Android, Flutter र app design का आधार।</p></article>
+  <article><span>⌁</span><h3>Safe Cyber Lab</h3><p>कानुनी र अनुमति-आधारित simulated अभ्यास।</p></article>
+</section>
+<section id="learn" class="section">
+  <div class="section-head"><div><div class="eyebrow">LEARNING PATHS</div><h2>आफ्नो सिकाइको बाटो छान्नुहोस्</h2></div><p>हरेक पाठमा नेपाली व्याख्या, उदाहरण र अभ्यास राखिएको छ।</p></div>
+  <div class="filters" id="filters"><button class="filter active" data-filter="all">सबै</button><button class="filter" data-filter="programming">Programming</button><button class="filter" data-filter="web">Web</button><button class="filter" data-filter="app">App</button><button class="filter" data-filter="security">Cybersecurity</button></div>
+  <div class="course-grid" id="courseGrid"></div>
+</section>
+<section id="playground" class="section playground-section">
+ <div class="section-head"><div><div class="eyebrow">INTERACTIVE PLAYGROUND</div><h2>Code लेख्नुहोस्, चलाउनुहोस्</h2></div><p>Python runner अनलाइन हुँदा Pyodide बाट चल्छ। अन्य भाषाका उदाहरणहरू सिकाइका लागि हुन्।</p></div>
+ <div class="editor">
+  <div class="editor-bar"><div><span class="dot"></span><b>AJ Editor</b></div><select id="language"><option value="python">Python</option><option value="javascript">JavaScript</option></select><button id="resetCode">Reset</button></div>
+  <textarea id="codeInput" spellcheck="false" aria-label="Code editor">name = "AJ Code Lab"
+print("Namaste,", name)
+for i in range(1, 4):
+    print("Lesson", i)</textarea>
+  <div class="editor-footer"><span id="runStatus">Ready · आफ्नो code लेख्नुहोस्</span><button class="btn primary" id="runCode">▶ Run Code</button></div>
+  <div class="output"><div class="output-title">OUTPUT <button id="clearOutput">Clear</button></div><pre id="outputText">यहाँ code को नतिजा देखिन्छ।</pre></div>
+ </div>
+ <p class="hint">नोट: Python चलाउन पहिलो पटक इन्टरनेट चाहिन्छ। संवेदनशील वा अज्ञात code नचलाउनुहोस्।</p>
+</section>
+<section id="security" class="section security-section">
+ <div class="section-head"><div><div class="eyebrow">AUTHORIZED PRACTICE ONLY</div><h2>Cyber Safety & Ethical Hacking Lab</h2></div><p>सुरक्षा सिकाइ जिम्मेवारीबाट सुरु हुन्छ। यो lab पूर्ण रूपमा simulated छ।</p></div>
+ <div class="safety-banner"><span>🛡️</span><div><b>सुरक्षित अभ्यासको नियम</b><p>यहाँका अभ्यासहरू काल्पनिक नेटवर्क र mock data मा मात्र चल्छन्। वास्तविक वेबसाइट, Wi‑Fi, server वा device परीक्षण गर्न स्पष्ट लिखित अनुमति आवश्यक हुन्छ। यो साइटले वास्तविक target scan वा attack गर्दैन।</p></div></div>
+ <div class="lab-grid">
+  <article class="lab-card"><div class="lab-icon">🌐</div><h3>Network Basics Simulator</h3><p>IP address, router, client र server बीचको सम्बन्ध बुझ्नुहोस्।</p><button class="text-btn" data-lab="network">Simulator खोल्नुहोस् →</button></article>
+  <article class="lab-card"><div class="lab-icon">🔐</div><h3>Password Safety</h3><p>पासवर्डको सुरक्षा, MFA र सुरक्षित account habits सिक्नुहोस्।</p><button class="text-btn" data-lab="password">अभ्यास सुरु गर्नुहोस् →</button></article>
+  <article class="lab-card"><div class="lab-icon">🧩</div><h3>Web Security Concepts</h3><p>HTTPS, input validation र सुरक्षित coding का सिद्धान्त।</p><button class="text-btn" data-lab="web">पाठ खोल्नुहोस् →</button></article>
+ </div>
+ <div class="lab-workspace" id="labWorkspace"><div class="empty-lab">माथिको एउटा सुरक्षित lab छान्नुहोस्।</div></div>
+</section>
+<section id="projects" class="section">
+ <div class="section-head"><div><div class="eyebrow">BUILD SOMETHING</div><h2>Project अभ्यास</h2></div><p>सानो project बाट सिकेको कुरा वास्तविक सीपमा बदल्नुहोस्।</p></div>
+ <div class="project-grid"><article><span>01 / PYTHON</span><h3>Personal Quiz App</h3><p>प्रश्न, विकल्प, score र feedback भएको quiz बनाउनुहोस्।</p><small>Beginner · Variables · Conditions</small></article><article><span>02 / WEB</span><h3>Portfolio Website</h3><p>आफ्नो परिचय, सीप र project देखाउने responsive साइट।</p><small>Beginner · HTML · CSS</small></article><article><span>03 / APP</span><h3>Study Planner</h3><p>पढाइका task थप्ने र पूरा भएको चिन्ह लगाउने app।</p><small>Intermediate · UI · State</small></article></div>
+</section>
+<section class="cta"><div><div class="eyebrow">KEEP BUILDING</div><h2>आजको अभ्यास, भोलिको सीप।</h2><p>हरेक दिन थोरै सिक्नुहोस्, code लेख्नुहोस् र आफ्नै project बनाउनुहोस्।</p></div><a class="btn primary" href="#learn">Learning सुरु गर्नुहोस् ↗</a></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">AJ</span><span>AJ <b>CODE LAB</b><small>LEARN · BUILD · PRACTICE</small></span></a><p>© <span id="year"></span> AJ Code Lab · सिकाइका लागि बनाइएको।</p><p class="footnote">Cybersecurity सामग्री शैक्षिक र अनुमति-आधारित प्रयोगका लागि मात्र हो।</p></footer>
+<div class="modal" id="courseModal" aria-hidden="true"><div class="modal-card"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<script src="app.js"></script>
+</body></html>
